@@ -1,0 +1,79 @@
+body {
+  background-color: #202125;
+  font-family: "Ubuntu", sans-serif;
+}
+#top {
+  font-family: "Ubuntu", sans-serif;
+  /* filter: blur(2px); */
+  background-color: #14151de1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  border: none;
+  padding-left: 10px;
+}
+.card .card-body:hover {
+  background-color: #14151de1;
+}
+.card img:hover {
+  opacity: 1.1;
+}
+
+.card img {
+  max-height: 400px;
+}
+.card-body {
+  background: linear-gradient(0deg, #2a2c31 0, rgba(42, 44, 49, 0.7) 100%);
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.anime {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  grid-row-gap: 20px;
+}
+
+.card-text {
+  display: none;
+}
+main {
+  background-color: #202125;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin: 3px 6px;
+}
+.fdi-item {
+  display: inline-block;
+  white-space: nowrap;
+}
+.fdi-item {
+  white-space: nowrap;
+}
+footer {
+  background: #0a0826;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url(img/itachi-uchiha.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#foot {
+  margin-top: 50px;
+  padding: 25px;
+}
