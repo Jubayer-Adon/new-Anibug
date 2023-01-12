@@ -10,9 +10,9 @@ body {
   background-repeat: no-repeat;
 }
 .card {
-  color: #202125;
-  background-color: #202125;
+  border: none;
   padding-left: 10px;
+  background-color: #202125;
 }
 .card .card-body:hover {
   background-color: #14151de1;
@@ -97,19 +97,22 @@ h3 {
   color: #111;
 }
 
-/* table {
+table {
   /* margin-left: 5px; */
-/* background: linear-gradient(#2827cc, #120e43); */
-/* background: #cae962; */
+  /* background: linear-gradient(#2827cc, #120e43); */
+  /* background: #cae962; */
+  transition: all 0.5s ease;
+}
 table td {
   background-image: linear-gradient(#2827cc #120e43);
   padding: 10px;
 }
 
-.Languege table .en {
+.Languege table .jp {
   background: #cae962;
   border-radius: 10px;
 }
+
 .Languege table a {
   color: azure;
 }
