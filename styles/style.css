@@ -1,26 +1,48 @@
+@font-face {
+  font-family: "naruto";
+  src: url(njnaruto.ttf) format(truetype);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DeathNote";
+  src: url(DeathNote.ttf) format(truetype);
+  font-weight: 700;
+}
 body {
   background-color: #202125;
   font-family: "Ubuntu", sans-serif;
 }
 #top {
   font-family: "Ubuntu", sans-serif;
-  /* filter: blur(2px); */
   background-color: #14151de1;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  margin-left: 3px;
+  position: sticky;
+}
+#top img {
+  margin: 0;
+  top: -5px;
+  position: static;
+  padding-right: 10px;
+  height: 80px;
+  width: 60px;
 }
 .card {
   color: #202125;
   background-color: #202125;
   padding-left: 10px;
+  flex-wrap: nowrap;
 }
 .card .card-body:hover {
   background-color: #14151de1;
 }
 .card img:hover {
-  opacity: 1.1;
+  opacity: 0.4;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-
 .card img {
   max-height: 400px;
 }
@@ -28,16 +50,17 @@ body {
   background: linear-gradient(0deg, #2a2c31 0, rgba(42, 44, 49, 0.7) 100%);
   color: rgb(255, 255, 255);
   font-family: sans-serif;
+  white-space: nowrap;
 }
 
 .anime {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 5px;
   justify-content: center;
   align-items: center;
   margin: 20px;
-  grid-row-gap: 20px;
+  grid-row-gap: 5px;
 }
 
 .card-text {
@@ -45,6 +68,7 @@ body {
 }
 main {
   background-color: #202125;
+  display: block;
 }
 .dot {
   width: 4px;
@@ -63,21 +87,26 @@ main {
 }
 footer {
   background: #010505;
+  background: url(images/death-note.jpg);
   text-align: center;
   color: white;
   margin-top: 50px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
-  background-image: url(img/itachi-uchiha.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Signika Negative", sans-serif;
 }
 
 #foot {
+  background-image: url(images/itachi-uchiha.jpg);
+  background: linear-gradient(#010505, rgb(3, 3, 3));
   margin-top: 50px;
-  padding: 25px;
+  padding: 10px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3 {
@@ -85,22 +114,21 @@ h3 {
 }
 
 .card-title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Abril Fatface", cursive;
 }
+
 .Languege {
-  justify-content: center;
-  display: flex;
+  display: inline-flex;
 }
 .lang {
   text-decoration: none;
-  /* justify-content: ; */
   color: #111;
 }
 
-/* table {
-  /* margin-left: 5px; */
-/* background: linear-gradient(#2827cc, #120e43); */
-/* background: #cae962; */
+table {
+  background: linear-gradient(#2827cc, #120e43);
+  background: #cae962;
+}
 table td {
   background-image: linear-gradient(#2827cc #120e43);
   padding: 10px;
@@ -108,8 +136,137 @@ table td {
 
 .Languege table .en {
   background: #cae962;
-  border-radius: 10px;
+  border-radius: 10px 15px;
+}
+nav .en {
+  background: #cae962;
+  padding: 10px 13px;
 }
 .Languege table a {
   color: azure;
+}
+
+#carouselExample {
+  margin: 10px 0px 10px 0px;
+}
+
+.h-2 {
+  font-size: 6em;
+  letter-spacing: 15px;
+  color: #0e3742;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  animation: animate 0.5s infinite;
+}
+.h-2 {
+  color: #ffffff;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  70%,
+  80%,
+  90.1%,
+  92% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+.nav {
+  padding: 10px;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+#top li {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 35px;
+}
+#top li a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+#top li a:hover {
+  cursor: pointer;
+  animation: animate 5s linear infinite;
+}
+
+h3:hover {
+  animation: animate 5s linear infinite;
+  cursor: default;
+}
+
+.color-2 {
+  color: azure;
+}
+.color {
+  /* color: rgb(237, 243, 255);
+   */
+  color: #aaa;
+}
+.color:hover {
+  color: #cae962;
+}
+
+#carouselExample {
+  top: -15px;
+}
+i {
+  line-height: 50px;
+  font-variant: normal;
+}
+.fa-sharp {
+  border-radius: 24px;
+  background: #cae962;
+  padding: 13px;
+  color: #111;
+  font-size: 20px;
+}
+
+.form-control {
+  /* padding: 0; */
+  margin-bottom: 0;
+}
+.second {
+  margin-bottom: 100px;
+  background-image: url("images/background.jpg");
+}
+.first {
+  height: 200px;
+  width: 100%;
+  display: block;
+}
+.first img {
+  height: 473px;
+  width: 600px;
+}
+
+.search-bar {
+  padding-top: 5px;
+  height: 40px;
+  border-radius: 24px;
+  border: none;
 }
