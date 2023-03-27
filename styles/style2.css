@@ -18,7 +18,7 @@ body {
   background-color: #14151de1;
 }
 .card img:hover {
-  opacity: 1.1;
+  /* opacity: 1.; */
 }
 
 .card img {
@@ -121,7 +121,7 @@ table td {
   color: #0e3742;
   width: 100%;
   line-height: 0.7em;
-  animation: animate 5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s infinite;
+  animation: animate 4s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s infinite;
 }
 
 @keyframes animate {
@@ -135,6 +135,7 @@ table td {
   80%,
   90.1%,
   92% {
+    background: linear-gradient(rgb(190, 24, 24) rgb(92, 3, 3));
     color: #0e3742;
     text-shadow: none;
   }
